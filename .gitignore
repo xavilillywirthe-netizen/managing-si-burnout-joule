@@ -1,0 +1,29 @@
+.DS_Store
+Thumbs.db
+~$*.xlsx
+
+__pycache__/
+*.py[cod]
+
+.ipynb_checkpoints/
+.matplotlib/
+_cache/
+_crate_cache/
+*.bak
+*.tmp
+*.asv
+*~
+
+# The full dataset is distributed separately. Keep only the lightweight data
+# documentation in the code repository.
+/data/*
+!/data/README.md
+!/data/LICENSE
+/managing_si_burnout_data_v1.zip
+/managing_si_burnout_data_v1.sha256
+/managing_si_burnout_code_v1.zip
+/managing_si_burnout_code_v1.sha256
+
+code/diagnostic_algorithm_lifetime_crate/_cache/
+code/diagnostic_algorithm_lifetime_crate/_crate_cache/
+code/msmr_si_ocp_identification/outputs/.matplotlib/

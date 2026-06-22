@@ -1,0 +1,28 @@
+Discarded initial charge and silicon-OCP treatment comparison
+=============================================================
+Dataset: BOL
+Kinetic compensation: True
+Primary metric: mean_absolute_error_6metrics_vs_C100_standard
+
+Overall case summary:
+- Enable Si OCP deformation: mean MAE=4.633, std=2.464, mean rmse_v=0.01889, mean rmse_dvdq=0.7065
+- Disable Si OCP deformation: mean MAE=5.35, std=1.821, mean rmse_v=0.01629, mean rmse_dvdq=0.6628
+
+Best configuration by C-rate and case:
+- C/10 / Enable Si OCP deformation: discarded=1%, MAE=3.366
+- C/10 / Disable Si OCP deformation: discarded=10%, MAE=3.674
+- C/100 / Enable Si OCP deformation: discarded=0%, MAE=0.06068
+- C/100 / Disable Si OCP deformation: discarded=10%, MAE=3.294
+- C/20 / Enable Si OCP deformation: discarded=1%, MAE=0.4476
+- C/20 / Disable Si OCP deformation: discarded=10%, MAE=2.287
+- C/3 / Enable Si OCP deformation: discarded=1%, MAE=3.835
+- C/3 / Disable Si OCP deformation: discarded=0%, MAE=5.663
+- C/5 / Enable Si OCP deformation: discarded=0%, MAE=3.172
+- C/5 / Disable Si OCP deformation: discarded=10%, MAE=3.075
+
+Direct group-level comparison:
+- C/10: disabled-enabled mean MAE delta = 0.6083
+- C/100: disabled-enabled mean MAE delta = 2.104
+- C/20: disabled-enabled mean MAE delta = 1.341
+- C/3: disabled-enabled mean MAE delta = 0.5354
+- C/5: disabled-enabled mean MAE delta = -1.004

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries"
+type: software
+authors:
+  - name: "Zhiwen Wan"
+  - name: "Andrew Weng"
+  - name: "Sravan Pannala"
+  - name: "Hamidreza Movahedi"
+  - name: "Taylor R. Garrick"
+  - name: "Gregory J. Offer"
+  - name: "Jason B. Siegel"
+  - name: "Anna G. Stefanopoulou"
+license: BSD-3-Clause
+date-released: "2026-05-14"

@@ -1,0 +1,6 @@
+crate_c,crate_label,reference_crate_c,reference_crate_label,mean_absolute_error_percentage_5params_vs_C100
+0.3333333333333333,C/3,0.01,C/100,9.520757443646549
+0.2,C/5,0.01,C/100,5.642888025557374
+0.1,C/10,0.01,C/100,2.7665580566868386
+0.05,C/20,0.01,C/100,2.22245701054048
+0.01,C/100,0.01,C/100,0.0

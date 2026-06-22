@@ -1,0 +1,6 @@
+crate_c,crate_label,reference_crate_label,mean_absolute_error_6metrics_vs_C100_standard,case_name,q_fit_min,dataset,kinetic_compensation
+0.1,C/10,C/100_standard,5.409457130485284,deformation_disabled,0.02,BOL,True
+0.2,C/5,C/100_standard,4.075951808536427,deformation_disabled,0.02,BOL,True
+0.3333333333333333,C/3,C/100_standard,8.482187987051791,deformation_disabled,0.02,BOL,True
+0.05,C/20,C/100_standard,4.066024706459493,deformation_disabled,0.02,BOL,True
+0.01,C/100,C/100_standard,4.9477592732012114,deformation_disabled,0.02,BOL,True

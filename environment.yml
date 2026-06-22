@@ -1,0 +1,17 @@
+name: managing-si-burnout
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.5
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - joblib
+  - openpyxl
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - plotly
+  - pip

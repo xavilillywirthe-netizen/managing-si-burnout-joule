@@ -1,0 +1,108 @@
+{
+  "q_fit_min": null,
+  "q_fit_max": null,
+  "q_fit_frac_min": null,
+  "q_fit_frac_max": null,
+  "weight_inside": 1.0,
+  "weight_outside": 0.2,
+  "cc_current_threshold_a": 0.099,
+  "min_cc_points": 50,
+  "voltage_min_v": 2.7,
+  "voltage_max_v": 4.25,
+  "truncate_at_cv_onset": false,
+  "cv_voltage_cutoff_v": 4.195,
+  "opt_grid_mode": "meas_cc",
+  "opt_dQ": 0.01,
+  "Q_grid_min": -3.0,
+  "Q_grid_max": 6.0,
+  "Q_grid_n": 900,
+  "voltage_early_frac": 0,
+  "voltage_early_weight": 1,
+  "voltage_weight_mode": "cosine",
+  "use_dvdq": true,
+  "w_voltage": 1.0,
+  "w_dvdq": 0.1,
+  "dvdq_sg_window": 31,
+  "dvdq_sg_poly": 3,
+  "v_q_fit_min": null,
+  "v_q_fit_max": null,
+  "v_q_fit_frac_min": 0.1,
+  "v_q_fit_frac_max": 1.0,
+  "v_weight_inside": 1.0,
+  "v_weight_outside": 0.0,
+  "dvdq_q_fit_min": null,
+  "dvdq_q_fit_max": null,
+  "dvdq_q_fit_frac_min": 0.1,
+  "dvdq_q_fit_frac_max": 1.0,
+  "dvdq_weight_inside": 1.0,
+  "dvdq_weight_outside": 0.0,
+  "use_peak_alignment": false,
+  "w_peak": 0.0,
+  "peak_min_prominence": 0.03,
+  "peak_regions": [
+    [
+      0,
+      0.3
+    ],
+    [
+      0.6,
+      1
+    ]
+  ],
+  "peak_regions_are_relative": true,
+  "enable_si_drift": true,
+  "si_drift_center": 0.5,
+  "use_prior": false,
+  "prior_sigma": {
+    "Cn_Si": 0.05,
+    "Cn_Gr": 0.2,
+    "x100": 0.05,
+    "Cp": 0.05,
+    "y100": 0.02,
+    "si_shift_v": 0.01,
+    "si_tilt_v": 0.02
+  },
+  "bounds": {
+    "Cn_Si": [
+      0.05,
+      1.6
+    ],
+    "Cn_Gr": [
+      0.5,
+      1.6
+    ],
+    "x100": [
+      0.5,
+      1.0
+    ],
+    "Cp": [
+      2.4,
+      2.8
+    ],
+    "y100": [
+      0.0,
+      0.12
+    ],
+    "si_scale_a": [
+      0.3,
+      1.1
+    ],
+    "si_shift_b": [
+      0.0,
+      0.08
+    ]
+  },
+  "optimizer": "de",
+  "de_maxiter": 60,
+  "de_popsize": 10,
+  "de_seed": 42,
+  "de_polish": false,
+  "de_tol": 0.01,
+  "de_workers": 1,
+  "lsq_method": "trf",
+  "lsq_loss": "soft_l1",
+  "lsq_f_scale": 1.0,
+  "do_lsq_polish_after_de": true,
+  "qcc_max_suspect_ah": 10.0,
+  "use_reconstructed_si_ocp": true
+}

@@ -1,0 +1,80 @@
+Minimal reproducible code package for the diagnostic eSOH analyses
+
+Overview
+This folder contains the diagnostic workflows used to estimate material-specific
+eSOH parameters, append silicon-dominant transition SoC, and evaluate C-rate
+robustness for the included datasets.
+
+Recommended order
+1. Run A01_cell_lifetime_diagnostics.ipynb.
+2. Run A02_crates_diagnostics.ipynb.
+3. Run A03_append_transitionSoC_to_all_csv.ipynb.
+4. Optional: run A04a_run_initial_charge_discard_si_ocp_study.py.
+5. Optional: run A04b_evaluate_initial_charge_discard_si_ocp_study.py.
+
+Main scripts
+
+A01_cell_lifetime_diagnostics.ipynb
+Purpose:
+    Runs seven-parameter lifetime eSOH diagnostics for representative cells.
+
+Input:
+    Repo-local lifetime data under data/cell_lifetime_data.
+
+Main output:
+    Results are written under batch_results/A01_cell_lifetime_diagnostics/cellXXX
+    and include:
+        - cellXXX_voltage_fit_summary.csv
+        - cellXXX_parameter_trends_1x3.png
+        - cellXXX_si_ocp_lifetime_gradient.png
+
+A02_crates_diagnostics.ipynb
+Purpose:
+    Runs eSOH diagnostics for BOL or EOL C-rate datasets. The notebook defaults
+    to BOL and includes a commented EOL block that can be enabled by the user.
+
+Input:
+    Repo-local C-rate data under data/bol_eol_crate_data.
+
+Main output:
+    Results are written under batch_results/A02_crate_diagnostics/<run_name>
+    and include:
+        - structured_batch_esoh_summary.csv
+        - crate_parameter_trends.png
+
+A03_append_transitionSoC_to_all_csv.ipynb
+Purpose:
+    Appends silicon-dominant transition SoC to diagnostic summary CSV files.
+
+Input:
+    Existing eSOH summary CSV files under batch_results. The notebook
+    automatically scans both supported formats:
+        - *_voltage_fit_summary.csv
+        - structured_batch_esoh_summary.csv
+
+Main output:
+    Transition SoC columns are appended to the same CSV files. Transition plots
+    are saved under transition_soc_plots in each result folder.
+
+A04a_run_initial_charge_discard_si_ocp_study.py
+Purpose:
+    Sweeps discarded initial charge data from 0% to 10% and compares two silicon
+    OCP treatments: deformation enabled and deformation disabled. This script can
+    run BOL or EOL datasets with or without kinetic compensation.
+
+Configuration:
+    Set DATASET to "BOL" or "EOL".
+    Set KINETIC_COMPENSATION to True or False.
+
+Main output:
+    Aggregate sweep outputs are written under:
+        batch_results/A04_initial_charge_discard_<dataset>_<kinetic-setting>
+
+A04b_evaluate_initial_charge_discard_si_ocp_study.py
+Purpose:
+    Reads the aggregate A04a output and generates comparison tables and figures
+    for MAE versus discarded initial charge data.
+
+Configuration:
+    Use the same DATASET and KINETIC_COMPENSATION settings as the A04a run being
+    evaluated.
