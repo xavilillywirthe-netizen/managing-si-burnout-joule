@@ -1,7 +1,13 @@
 # Data
 
 This folder is the expected location for the data files used by the analysis and
-plotting workflows. The full dataset is distributed separately on Zenodo:
+plotting workflows for the Joule article:
+
+Wan et al., "Managing silicon burn-out via onboard material diagnostics for
+durable high-energy density batteries," *Joule* (2026).
+https://doi.org/10.1016/j.joule.2026.102531
+
+The full dataset is distributed separately on Zenodo:
 
 https://doi.org/10.5281/zenodo.20259651
 
@@ -101,7 +107,7 @@ for the dataset license and citation metadata.
 
 ## Dataset Context
 
-This dataset accompanies the code repository for the Joule manuscript "Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries" and provides the data required to reproduce the analyses and figures in that work.
+This dataset accompanies the code repository for the Joule article "Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries" and provides the data required to reproduce the analyses and figures in that work.
 
 The corresponding code package is available at:
 

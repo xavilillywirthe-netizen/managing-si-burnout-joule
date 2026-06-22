@@ -1,6 +1,6 @@
 # Code Workflows
 
-This folder contains the analysis and plotting workflows for the silicon/graphite material-diagnostic study. The root README explains the repository-level structure; this file is a compact navigation guide for running the code.
+This folder contains the analysis and plotting workflows for the Joule article "Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries" (https://doi.org/10.1016/j.joule.2026.102531). The root README explains the repository-level structure; this file is a compact navigation guide for running the code.
 
 ## Recommended Order
 
@@ -59,7 +59,7 @@ This folder contains the analysis and plotting workflows for the silicon/graphit
 - Some output tables keep historical internal column names for compatibility:
   `x100` corresponds to `x_n,100`, `y100` corresponds to `x_p,100`,
   `si_scale_a` corresponds to `s_V`, and `si_shift_b` corresponds to
-  `U_off` in the manuscript. These columns should not be renamed unless the
+  `U_off` in the article. These columns should not be renamed unless the
   downstream notebooks and MATLAB plotting scripts are updated at the same
   time.
 - Cache folders are generated artifacts and can be deleted when a clean rerun is needed.

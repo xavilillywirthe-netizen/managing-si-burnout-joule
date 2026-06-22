@@ -1,10 +1,11 @@
 # Managing Silicon Burn-Out
 
-This repository contains the code and data used for the manuscript:
+This repository contains the code used for the Joule article:
 
-**Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries**
+**Wan et al., _Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries_, Joule (2026).**  
+https://doi.org/10.1016/j.joule.2026.102531
 
-The workflows implement material-specific diagnostics for NMC622/SiO-graphite pouch cells, estimate silicon and graphite contributions to electrode capacity, infer the silicon-dominant transition state of charge (SoC), and reproduce the main analysis and figure-generation pipelines used in the manuscript.
+The workflows implement material-specific diagnostics for NMC622/SiO-graphite pouch cells, estimate silicon and graphite contributions to electrode capacity, infer the silicon-dominant transition state of charge (SoC), and reproduce the main analysis and figure-generation pipelines used in the article.
 
 ## Repository Layout
 
@@ -31,13 +32,17 @@ The workflows implement material-specific diagnostics for NMC622/SiO-graphite po
 
 ## Data
 
-The dataset is expected to be placed at the repository root as `data/`. The included `cell_lifetime_data/test_matrix.xlsx` lists all 60 lifetime cells and their cycling or calendar-aging conditions. The lifetime data are split into `type1` and `type2` folders because the processed Voltaiq export schema changed across the dataset; the diagnostic loader selects the correct schema from the cell ID.
+The full dataset is distributed separately on Zenodo:
+
+https://doi.org/10.5281/zenodo.20259651
+
+After download and extraction, the dataset is expected to be placed at the repository root as `data/`. The included `cell_lifetime_data/test_matrix.xlsx` lists all 60 lifetime cells and their cycling or calendar-aging conditions. The lifetime data are split into `type1` and `type2` folders because the processed Voltaiq export schema changed across the dataset; the diagnostic loader selects the correct schema from the cell ID.
 
 The lifetime-aging trends represented by this dataset were previously discussed in:
 
 Wan, Zhiwen, et al. "Degradation and expansion of lithium-ion batteries with silicon/graphite anodes: Impact of pretension, temperature, C-rate and state-of-charge window." *eTransportation* 24 (2025): 100416.
 
-This repository uses that dataset to develop and demonstrate onboard material diagnostics and silicon-current-share analysis for the Joule manuscript above.
+This repository uses that dataset to develop and demonstrate onboard material diagnostics and silicon-current-share analysis for the Joule article above.
 
 ## Requirements
 
@@ -115,7 +120,12 @@ Attribution 4.0 International License (CC BY 4.0); see
 
 Citation metadata for this repository are provided in [CITATION.cff](CITATION.cff):
 
-**Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries**.
+**Wan et al., _Managing silicon burn-out via onboard material diagnostics for durable high-energy density batteries_, Joule (2026).**  
+https://doi.org/10.1016/j.joule.2026.102531
+
+The archived code package is available from Zenodo:
+
+https://doi.org/10.5281/zenodo.20259383
 
 For background on the lifetime-aging dataset and trends, cite:
 
